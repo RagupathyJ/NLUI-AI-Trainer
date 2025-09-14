@@ -1,0 +1,4 @@
+{
+  "watch": ["src", "app.js","nlp","lib"],
+  "ignore": ["models/*", "node_modules/*"]
+}

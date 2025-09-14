@@ -1,0 +1,1753 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "go,home,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "home,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "home,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "home,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "home,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "go,start,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "navig,start,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "open,page,start": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,start,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,page,show,start,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "go,main,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "main,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "main,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "main,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "main,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "about,go,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "about,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "about,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "about,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "about,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "go,info,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "info,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "info,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "info,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "info,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "are,go,to,we,who": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "are,navig,to,we,who": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "are,open,page,we,who": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "are,me,take,to,we,who": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "are,me,page,show,the,we,who": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "contact,go,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "contact,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "contact,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "contact,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "contact,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "go,reach,to,us": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "navig,reach,to,us": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "open,page,reach,us": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,reach,take,to,us": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,page,reach,show,the,us": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "email,go,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "email,navig,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "email,open,page": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "email,me,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "email,me,page,show,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "go,support,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "navig,support,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "open,page,support": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,support,take,to": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "me,page,show,support,the": {
+            "intent": "navigate_to_page",
+            "domain": "default"
+          },
+          "drug,is,list,medic,my,on,the": {
+            "intent": "concept.formulary",
+            "domain": "default"
+          },
+          "doe,formulari,mean,what": {
+            "intent": "concept.formulary",
+            "domain": "default"
+          },
+          "check,formulari,status": {
+            "intent": "concept.formulary",
+            "domain": "default"
+          },
+          "author,do,drug,for,i,need,prior,this": {
+            "intent": "concept.prior_authorization",
+            "domain": "default"
+          },
+          "auth,doe,how,prior,work": {
+            "intent": "concept.prior_authorization",
+            "domain": "default"
+          },
+          "approv,get,insur": {
+            "intent": "concept.prior_authorization",
+            "domain": "default"
+          },
+          "a,drug,is,specialti,what": {
+            "intent": "concept.specialty_drug",
+            "domain": "default"
+          },
+          "cover,doe,high-cost,medic,my,plan": {
+            "intent": "concept.specialty_drug",
+            "domain": "default"
+          },
+          "a,auth,do,drug,for,i,need,prior,specialti": {
+            "intent": "concept.specialty_drug",
+            "domain": "default"
+          },
+          "in,is,pharmaci,step,therapi,what": {
+            "intent": "concept.step_therapy",
+            "domain": "default"
+          },
+          "anoth,do,drug,first,i,need,to,tri,whi": {
+            "intent": "concept.step_therapy",
+            "domain": "default"
+          },
+          "bypass,can,i,step,therapi": {
+            "intent": "concept.step_therapy",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "navigate_to_page": "default",
+          "concept.formulary": "default",
+          "concept.prior_authorization": "default",
+          "concept.specialty_drug": "default",
+          "concept.step_therapy": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "go to home",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to home",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open home page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to home",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the home page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to start",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to start",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open start page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to start",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the start page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to main",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to main",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open main page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to main",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the main page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to about",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to about",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open about page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to about",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the about page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to info",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to info",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open info page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to info",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the info page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to who we are",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to who we are",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open who we are page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to who we are",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the who we are page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to contact",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to contact",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open contact page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to contact",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the contact page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to reach us",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to reach us",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open reach us page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to reach us",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the reach us page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to email",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to email",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open email page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to email",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the email page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "go to support",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "navigate to support",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "open support page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "take me to support",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me the support page",
+            "intent": "navigate_to_page"
+          },
+          {
+            "domain": "default",
+            "utterance": "Is my medication on the drug list?",
+            "intent": "concept.formulary"
+          },
+          {
+            "domain": "default",
+            "utterance": "What does formulary mean?",
+            "intent": "concept.formulary"
+          },
+          {
+            "domain": "default",
+            "utterance": "Check formulary status",
+            "intent": "concept.formulary"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do I need prior authorization for this drug?",
+            "intent": "concept.prior_authorization"
+          },
+          {
+            "domain": "default",
+            "utterance": "How does prior auth work?",
+            "intent": "concept.prior_authorization"
+          },
+          {
+            "domain": "default",
+            "utterance": "Get insurance approval",
+            "intent": "concept.prior_authorization"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is a specialty drug?",
+            "intent": "concept.specialty_drug"
+          },
+          {
+            "domain": "default",
+            "utterance": "Does my plan cover high-cost medications?",
+            "intent": "concept.specialty_drug"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do I need prior auth for a specialty drug?",
+            "intent": "concept.specialty_drug"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is step therapy in pharmacy?",
+            "intent": "concept.step_therapy"
+          },
+          {
+            "domain": "default",
+            "utterance": "Why do I need to try another drug first?",
+            "intent": "concept.step_therapy"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I bypass step therapy?",
+            "intent": "concept.step_therapy"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "go": 1,
+              "to": 1,
+              "home": 1,
+              "navig": 1,
+              "open": 1,
+              "page": 1,
+              "take": 1,
+              "me": 1,
+              "show": 1,
+              "the": 1,
+              "start": 1,
+              "main": 1,
+              "about": 1,
+              "info": 1,
+              "who": 1,
+              "we": 1,
+              "are": 1,
+              "contact": 1,
+              "reach": 1,
+              "us": 1,
+              "email": 1,
+              "support": 1,
+              "is": 1,
+              "my": 1,
+              "medic": 1,
+              "on": 1,
+              "drug": 1,
+              "list": 1,
+              "what": 1,
+              "doe": 1,
+              "formulari": 1,
+              "mean": 1,
+              "check": 1,
+              "status": 1,
+              "do": 1,
+              "i": 1,
+              "need": 1,
+              "prior": 1,
+              "author": 1,
+              "for": 1,
+              "this": 1,
+              "how": 1,
+              "auth": 1,
+              "work": 1,
+              "get": 1,
+              "insur": 1,
+              "approv": 1,
+              "a": 1,
+              "specialti": 1,
+              "plan": 1,
+              "cover": 1,
+              "high-cost": 1,
+              "step": 1,
+              "therapi": 1,
+              "in": 1,
+              "pharmaci": 1,
+              "whi": 1,
+              "tri": 1,
+              "anoth": 1,
+              "first": 1,
+              "can": 1,
+              "bypass": 1
+            },
+            "intents": {
+              "navigate_to_page": 1,
+              "concept.formulary": 1,
+              "concept.prior_authorization": 1,
+              "concept.specialty_drug": 1,
+              "concept.step_therapy": 1
+            },
+            "intentFeatures": {
+              "navigate_to_page": {
+                "go": 1,
+                "to": 1,
+                "home": 1,
+                "navig": 1,
+                "open": 1,
+                "page": 1,
+                "take": 1,
+                "me": 1,
+                "show": 1,
+                "the": 1,
+                "start": 1,
+                "main": 1,
+                "about": 1,
+                "info": 1,
+                "who": 1,
+                "we": 1,
+                "are": 1,
+                "contact": 1,
+                "reach": 1,
+                "us": 1,
+                "email": 1,
+                "support": 1
+              },
+              "concept.formulary": {
+                "is": 1,
+                "my": 1,
+                "medic": 1,
+                "on": 1,
+                "the": 1,
+                "drug": 1,
+                "list": 1,
+                "what": 1,
+                "doe": 1,
+                "formulari": 1,
+                "mean": 1,
+                "check": 1,
+                "status": 1
+              },
+              "concept.prior_authorization": {
+                "do": 1,
+                "i": 1,
+                "need": 1,
+                "prior": 1,
+                "author": 1,
+                "for": 1,
+                "this": 1,
+                "drug": 1,
+                "how": 1,
+                "doe": 1,
+                "auth": 1,
+                "work": 1,
+                "get": 1,
+                "insur": 1,
+                "approv": 1
+              },
+              "concept.specialty_drug": {
+                "what": 1,
+                "is": 1,
+                "a": 1,
+                "specialti": 1,
+                "drug": 1,
+                "doe": 1,
+                "my": 1,
+                "plan": 1,
+                "cover": 1,
+                "high-cost": 1,
+                "medic": 1,
+                "do": 1,
+                "i": 1,
+                "need": 1,
+                "prior": 1,
+                "auth": 1,
+                "for": 1
+              },
+              "concept.step_therapy": {
+                "what": 1,
+                "is": 1,
+                "step": 1,
+                "therapi": 1,
+                "in": 1,
+                "pharmaci": 1,
+                "whi": 1,
+                "do": 1,
+                "i": 1,
+                "need": 1,
+                "to": 1,
+                "tri": 1,
+                "anoth": 1,
+                "drug": 1,
+                "first": 1,
+                "can": 1,
+                "bypass": 1
+              }
+            },
+            "featuresToIntent": {
+              "go": [
+                "navigate_to_page"
+              ],
+              "to": [
+                "navigate_to_page",
+                "concept.step_therapy"
+              ],
+              "home": [
+                "navigate_to_page"
+              ],
+              "navig": [
+                "navigate_to_page"
+              ],
+              "open": [
+                "navigate_to_page"
+              ],
+              "page": [
+                "navigate_to_page"
+              ],
+              "take": [
+                "navigate_to_page"
+              ],
+              "me": [
+                "navigate_to_page"
+              ],
+              "show": [
+                "navigate_to_page"
+              ],
+              "the": [
+                "navigate_to_page",
+                "concept.formulary"
+              ],
+              "start": [
+                "navigate_to_page"
+              ],
+              "main": [
+                "navigate_to_page"
+              ],
+              "about": [
+                "navigate_to_page"
+              ],
+              "info": [
+                "navigate_to_page"
+              ],
+              "who": [
+                "navigate_to_page"
+              ],
+              "we": [
+                "navigate_to_page"
+              ],
+              "are": [
+                "navigate_to_page"
+              ],
+              "contact": [
+                "navigate_to_page"
+              ],
+              "reach": [
+                "navigate_to_page"
+              ],
+              "us": [
+                "navigate_to_page"
+              ],
+              "email": [
+                "navigate_to_page"
+              ],
+              "support": [
+                "navigate_to_page"
+              ],
+              "is": [
+                "concept.formulary",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "my": [
+                "concept.formulary",
+                "concept.specialty_drug"
+              ],
+              "medic": [
+                "concept.formulary",
+                "concept.specialty_drug"
+              ],
+              "on": [
+                "concept.formulary"
+              ],
+              "drug": [
+                "concept.formulary",
+                "concept.prior_authorization",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "list": [
+                "concept.formulary"
+              ],
+              "what": [
+                "concept.formulary",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "doe": [
+                "concept.formulary",
+                "concept.prior_authorization",
+                "concept.specialty_drug"
+              ],
+              "formulari": [
+                "concept.formulary"
+              ],
+              "mean": [
+                "concept.formulary"
+              ],
+              "check": [
+                "concept.formulary"
+              ],
+              "status": [
+                "concept.formulary"
+              ],
+              "do": [
+                "concept.prior_authorization",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "i": [
+                "concept.prior_authorization",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "need": [
+                "concept.prior_authorization",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "prior": [
+                "concept.prior_authorization",
+                "concept.specialty_drug"
+              ],
+              "author": [
+                "concept.prior_authorization"
+              ],
+              "for": [
+                "concept.prior_authorization",
+                "concept.specialty_drug"
+              ],
+              "this": [
+                "concept.prior_authorization"
+              ],
+              "how": [
+                "concept.prior_authorization"
+              ],
+              "auth": [
+                "concept.prior_authorization",
+                "concept.specialty_drug"
+              ],
+              "work": [
+                "concept.prior_authorization"
+              ],
+              "get": [
+                "concept.prior_authorization"
+              ],
+              "insur": [
+                "concept.prior_authorization"
+              ],
+              "approv": [
+                "concept.prior_authorization"
+              ],
+              "a": [
+                "concept.specialty_drug"
+              ],
+              "specialti": [
+                "concept.specialty_drug"
+              ],
+              "plan": [
+                "concept.specialty_drug"
+              ],
+              "cover": [
+                "concept.specialty_drug"
+              ],
+              "high-cost": [
+                "concept.specialty_drug"
+              ],
+              "step": [
+                "concept.step_therapy"
+              ],
+              "therapi": [
+                "concept.step_therapy"
+              ],
+              "in": [
+                "concept.step_therapy"
+              ],
+              "pharmaci": [
+                "concept.step_therapy"
+              ],
+              "whi": [
+                "concept.step_therapy"
+              ],
+              "tri": [
+                "concept.step_therapy"
+              ],
+              "anoth": [
+                "concept.step_therapy"
+              ],
+              "first": [
+                "concept.step_therapy"
+              ],
+              "can": [
+                "concept.step_therapy"
+              ],
+              "bypass": [
+                "concept.step_therapy"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "go",
+                "to",
+                "home",
+                "navig",
+                "open",
+                "page",
+                "take",
+                "me",
+                "show",
+                "the",
+                "start",
+                "main",
+                "about",
+                "info",
+                "who",
+                "we",
+                "are",
+                "contact",
+                "reach",
+                "us",
+                "email",
+                "support",
+                "is",
+                "my",
+                "medic",
+                "on",
+                "drug",
+                "list",
+                "what",
+                "doe",
+                "formulari",
+                "mean",
+                "check",
+                "status",
+                "do",
+                "i",
+                "need",
+                "prior",
+                "author",
+                "for",
+                "this",
+                "how",
+                "auth",
+                "work",
+                "get",
+                "insur",
+                "approv",
+                "a",
+                "specialti",
+                "plan",
+                "cover",
+                "high-cost",
+                "step",
+                "therapi",
+                "in",
+                "pharmaci",
+                "whi",
+                "tri",
+                "anoth",
+                "first",
+                "can",
+                "bypass"
+              ],
+              "intents": [
+                "navigate_to_page",
+                "concept.formulary",
+                "concept.prior_authorization",
+                "concept.specialty_drug",
+                "concept.step_therapy"
+              ],
+              "perceptrons": [
+                [
+                  3.274683713912964,
+                  6.372531414031982,
+                  1.341853141784668,
+                  3.2776951789855957,
+                  4.185593605041504,
+                  5.4606614112854,
+                  1.0014480352401733,
+                  2.2778632640838623,
+                  1.2738178968429565,
+                  0.630637526512146,
+                  1.3415822982788086,
+                  1.396208643913269,
+                  1.4767729043960571,
+                  1.550561547279358,
+                  0.5077143311500549,
+                  0.5077143311500549,
+                  0.5077143311500549,
+                  1.611963152885437,
+                  0.8069704174995422,
+                  0.8069704174995422,
+                  1.5612525939941406,
+                  1.4545599222183228,
+                  -1.1003570556640625,
+                  -0.8400701284408569,
+                  -0.8400701284408569,
+                  -0.45825690031051636,
+                  -2.3440089225769043,
+                  -0.45825690031051636,
+                  -1.1237761974334717,
+                  -1.4123506546020508,
+                  -1.524433970451355,
+                  -0.5101039409637451,
+                  -0.9065354466438293,
+                  -0.9065354466438293,
+                  -1.408427357673645,
+                  -1.900270700454712,
+                  -1.408427357673645,
+                  -0.9154538512229919,
+                  -0.18549489974975586,
+                  -0.3366515040397644,
+                  -0.18549489974975586,
+                  -0.43229010701179504,
+                  -0.5560574531555176,
+                  -0.43229010701179504,
+                  -1.0884729623794556,
+                  -1.0884729623794556,
+                  -1.0884729623794556,
+                  -0.2517160177230835,
+                  -0.2517160177230835,
+                  -0.22387142479419708,
+                  -0.22387142479419708,
+                  -0.22387142479419708,
+                  -0.5904425978660583,
+                  -0.5904425978660583,
+                  -0.2268294394016266,
+                  -0.2268294394016266,
+                  -0.9395137429237366,
+                  -0.9395137429237366,
+                  -0.9395137429237366,
+                  -0.9395137429237366,
+                  -0.2630836069583893,
+                  -0.2630836069583893,
+                  3.1180134984808
+                ],
+                [
+                  -0.2984709143638611,
+                  -0.7668379545211792,
+                  -0.41317039728164673,
+                  -0.2900623381137848,
+                  -0.2503078281879425,
+                  -1.2345391511917114,
+                  -0.06794591248035431,
+                  -1.0454399585723877,
+                  -0.9696155190467834,
+                  2.2324891090393066,
+                  -0.33776313066482544,
+                  -0.25603634119033813,
+                  -0.20674797892570496,
+                  -0.1636117696762085,
+                  -0.07649146020412445,
+                  -0.07649146020412445,
+                  -0.07649146020412445,
+                  -0.11818816512823105,
+                  -0.06724486500024796,
+                  -0.06724486500024796,
+                  -0.08622154593467712,
+                  -0.07210635393857956,
+                  0.6153215765953064,
+                  1.4376392364501953,
+                  1.4376392364501953,
+                  3.1733696460723877,
+                  0.9601941704750061,
+                  3.1733696460723877,
+                  1.0742957592010498,
+                  1.256148338317871,
+                  6.9016852378845215,
+                  3.623002052307129,
+                  3.2279083728790283,
+                  3.2279083728790283,
+                  -0.39677712321281433,
+                  -0.4640815556049347,
+                  -0.39677712321281433,
+                  -0.8999387621879578,
+                  -0.25617608428001404,
+                  -0.2777361571788788,
+                  -0.25617608428001404,
+                  -0.5631296634674072,
+                  -0.5842828750610352,
+                  -0.5631296634674072,
+                  -0.42613551020622253,
+                  -0.42613551020622253,
+                  -0.42613551020622253,
+                  -1.8239240646362305,
+                  -1.8239240646362305,
+                  -1.7513103485107422,
+                  -1.7513103485107422,
+                  -1.7513103485107422,
+                  -0.7727944850921631,
+                  -0.7727944850921631,
+                  -0.7040444612503052,
+                  -0.7040444612503052,
+                  -0.07820914685726166,
+                  -0.07820914685726166,
+                  -0.07820914685726166,
+                  -0.07820914685726166,
+                  -0.042955733835697174,
+                  -0.042955733835697174,
+                  1.1306234268597406
+                ],
+                [
+                  -0.371280312538147,
+                  -1.2267341613769531,
+                  -0.37795132398605347,
+                  -0.3649527132511139,
+                  -0.6914670467376709,
+                  -0.8915539383888245,
+                  -0.08817440271377563,
+                  -0.2874542772769928,
+                  -0.1988019347190857,
+                  -0.2215098738670349,
+                  -0.27080202102661133,
+                  -0.2094486802816391,
+                  -0.17828330397605896,
+                  -0.1572856307029724,
+                  -0.058219898492097855,
+                  -0.058219898492097855,
+                  -0.058219898492097855,
+                  -0.13940392434597015,
+                  -0.0714845359325409,
+                  -0.0714845359325409,
+                  -0.12170377373695374,
+                  -0.11065173149108887,
+                  -0.3604975640773773,
+                  -0.7059000134468079,
+                  -0.7059000134468079,
+                  -0.011639196425676346,
+                  -0.023813806474208832,
+                  -0.011639196425676346,
+                  -1.2078779935836792,
+                  1.6787596940994263,
+                  -1.1542348861694336,
+                  -0.845374345779419,
+                  -0.27918440103530884,
+                  -0.27918440103530884,
+                  0.2331950068473816,
+                  -0.11540298163890839,
+                  0.2331950068473816,
+                  3.9363269805908203,
+                  3.6744790077209473,
+                  0.6332963705062866,
+                  3.6744790077209473,
+                  3.261199474334717,
+                  0.19119103252887726,
+                  3.261199474334717,
+                  4.226104736328125,
+                  4.226104736328125,
+                  4.226104736328125,
+                  -3.29968523979187,
+                  -3.29968523979187,
+                  -0.6786683201789856,
+                  -0.6786683201789856,
+                  -0.6786683201789856,
+                  -0.4681241810321808,
+                  -0.4681241810321808,
+                  -0.08243809640407562,
+                  -0.08243809640407562,
+                  -0.33105388283729553,
+                  -0.33105388283729553,
+                  -0.33105388283729553,
+                  -0.33105388283729553,
+                  -0.3401704728603363,
+                  -0.3401704728603363,
+                  1.7146990752295046
+                ],
+                [
+                  -0.12011290341615677,
+                  -0.9170708060264587,
+                  -0.26599448919296265,
+                  -0.10281802713871002,
+                  -0.3979641795158386,
+                  -0.5123002529144287,
+                  -0.03010549582540989,
+                  -0.153607577085495,
+                  -0.10939545929431915,
+                  -1.8808406591415405,
+                  -0.17163464426994324,
+                  -0.09584769606590271,
+                  -0.056506093591451645,
+                  -0.0326387844979763,
+                  -0.018501464277505875,
+                  -0.018501464277505875,
+                  -0.018501464277505875,
+                  -0.0161474347114563,
+                  -0.010894816368818283,
+                  -0.010894816368818283,
+                  -0.008252477273344994,
+                  -0.006051843985915184,
+                  0.6460152864456177,
+                  1.5383886098861694,
+                  1.5383886098861694,
+                  -1.766439437866211,
+                  1.3663182258605957,
+                  -1.766439437866211,
+                  1.2536412477493286,
+                  0.985720694065094,
+                  -1.218549370765686,
+                  -1.1477586030960083,
+                  -0.05677226930856705,
+                  -0.05677226930856705,
+                  0.20049139857292175,
+                  -0.017817243933677673,
+                  0.20049139857292175,
+                  -0.2652598023414612,
+                  -1.3724440336227417,
+                  0.8934965133666992,
+                  -1.3724440336227417,
+                  -1.135053277015686,
+                  1.142127513885498,
+                  -1.135053277015686,
+                  -0.09980432689189911,
+                  -0.09980432689189911,
+                  -0.09980432689189911,
+                  5.256226062774658,
+                  5.256226062774658,
+                  3.310336112976074,
+                  3.310336112976074,
+                  3.310336112976074,
+                  -0.6920103430747986,
+                  -0.6920103430747986,
+                  -0.4738802909851074,
+                  -0.4738802909851074,
+                  -0.53388512134552,
+                  -0.53388512134552,
+                  -0.53388512134552,
+                  -0.53388512134552,
+                  -0.1427815705537796,
+                  -0.1427815705537796,
+                  0.32535390021563476
+                ],
+                [
+                  -0.8485386371612549,
+                  0.3158023953437805,
+                  -0.6594440937042236,
+                  -0.8237061500549316,
+                  -0.33780038356781006,
+                  -0.3815251290798187,
+                  -0.4179539084434509,
+                  -0.4616789221763611,
+                  -0.030962498858571053,
+                  -0.36386242508888245,
+                  -0.5212867259979248,
+                  -0.3489202558994293,
+                  -0.25911659002304077,
+                  -0.19160428643226624,
+                  -0.0850110799074173,
+                  -0.0850110799074173,
+                  -0.0850110799074173,
+                  -0.1017240360379219,
+                  -0.05891907215118408,
+                  -0.05891907215118408,
+                  -0.05577819049358368,
+                  -0.049928754568099976,
+                  1.0733147859573364,
+                  -0.32712897658348083,
+                  -0.32712897658348083,
+                  -0.32093530893325806,
+                  -0.20404987037181854,
+                  -0.32093530893325806,
+                  1.0279216766357422,
+                  -0.4214562177658081,
+                  -0.5237374305725098,
+                  -0.4144532382488251,
+                  -0.0879291370511055,
+                  -0.0879291370511055,
+                  0.7877519130706787,
+                  2.606879711151123,
+                  0.7877519130706787,
+                  -1.5676108598709106,
+                  -0.9566426277160645,
+                  -1.5637869834899902,
+                  -0.9566426277160645,
+                  -0.0016014447901397943,
+                  -0.46420201659202576,
+                  -0.0016014447901397943,
+                  -0.1187928169965744,
+                  -0.1187928169965744,
+                  -0.1187928169965744,
+                  -1.1244889497756958,
+                  -1.1244889497756958,
+                  -0.001807743334211409,
+                  -0.001807743334211409,
+                  -0.001807743334211409,
+                  3.8894565105438232,
+                  3.8894565105438232,
+                  2.0614876747131348,
+                  2.0614876747131348,
+                  2.4204506874084473,
+                  2.4204506874084473,
+                  2.4204506874084473,
+                  2.4204506874084473,
+                  1.8262578248977661,
+                  1.8262578248977661,
+                  0.2540347404910371
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "go to home"
+      ],
+      [
+        "en",
+        "navigate to home"
+      ],
+      [
+        "en",
+        "open home page"
+      ],
+      [
+        "en",
+        "take me to home"
+      ],
+      [
+        "en",
+        "show me the home page"
+      ],
+      [
+        "en",
+        "go to start"
+      ],
+      [
+        "en",
+        "navigate to start"
+      ],
+      [
+        "en",
+        "open start page"
+      ],
+      [
+        "en",
+        "take me to start"
+      ],
+      [
+        "en",
+        "show me the start page"
+      ],
+      [
+        "en",
+        "go to main"
+      ],
+      [
+        "en",
+        "navigate to main"
+      ],
+      [
+        "en",
+        "open main page"
+      ],
+      [
+        "en",
+        "take me to main"
+      ],
+      [
+        "en",
+        "show me the main page"
+      ],
+      [
+        "en",
+        "go to about"
+      ],
+      [
+        "en",
+        "navigate to about"
+      ],
+      [
+        "en",
+        "open about page"
+      ],
+      [
+        "en",
+        "take me to about"
+      ],
+      [
+        "en",
+        "show me the about page"
+      ],
+      [
+        "en",
+        "go to info"
+      ],
+      [
+        "en",
+        "navigate to info"
+      ],
+      [
+        "en",
+        "open info page"
+      ],
+      [
+        "en",
+        "take me to info"
+      ],
+      [
+        "en",
+        "show me the info page"
+      ],
+      [
+        "en",
+        "go to who we are"
+      ],
+      [
+        "en",
+        "navigate to who we are"
+      ],
+      [
+        "en",
+        "open who we are page"
+      ],
+      [
+        "en",
+        "take me to who we are"
+      ],
+      [
+        "en",
+        "show me the who we are page"
+      ],
+      [
+        "en",
+        "go to contact"
+      ],
+      [
+        "en",
+        "navigate to contact"
+      ],
+      [
+        "en",
+        "open contact page"
+      ],
+      [
+        "en",
+        "take me to contact"
+      ],
+      [
+        "en",
+        "show me the contact page"
+      ],
+      [
+        "en",
+        "go to reach us"
+      ],
+      [
+        "en",
+        "navigate to reach us"
+      ],
+      [
+        "en",
+        "open reach us page"
+      ],
+      [
+        "en",
+        "take me to reach us"
+      ],
+      [
+        "en",
+        "show me the reach us page"
+      ],
+      [
+        "en",
+        "go to email"
+      ],
+      [
+        "en",
+        "navigate to email"
+      ],
+      [
+        "en",
+        "open email page"
+      ],
+      [
+        "en",
+        "take me to email"
+      ],
+      [
+        "en",
+        "show me the email page"
+      ],
+      [
+        "en",
+        "go to support"
+      ],
+      [
+        "en",
+        "navigate to support"
+      ],
+      [
+        "en",
+        "open support page"
+      ],
+      [
+        "en",
+        "take me to support"
+      ],
+      [
+        "en",
+        "show me the support page"
+      ],
+      [
+        "en",
+        "Is my medication on the drug list?"
+      ],
+      [
+        "en",
+        "What does formulary mean?"
+      ],
+      [
+        "en",
+        "Check formulary status"
+      ],
+      [
+        "en",
+        "Do I need prior authorization for this drug?"
+      ],
+      [
+        "en",
+        "How does prior auth work?"
+      ],
+      [
+        "en",
+        "Get insurance approval"
+      ],
+      [
+        "en",
+        "What is a specialty drug?"
+      ],
+      [
+        "en",
+        "Does my plan cover high-cost medications?"
+      ],
+      [
+        "en",
+        "Do I need prior auth for a specialty drug?"
+      ],
+      [
+        "en",
+        "What is step therapy in pharmacy?"
+      ],
+      [
+        "en",
+        "Why do I need to try another drug first?"
+      ],
+      [
+        "en",
+        "Can I bypass step therapy?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {
+      "en": {
+        "page": {
+          "name": "page",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "home",
+              "texts": [
+                "home",
+                "start",
+                "main"
+              ]
+            },
+            {
+              "option": "about",
+              "texts": [
+                "about",
+                "info",
+                "who we are"
+              ]
+            },
+            {
+              "option": "contact",
+              "texts": [
+                "contact",
+                "reach us",
+                "email",
+                "support"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "concept.formulary": [
+          {
+            "answer": "A formulary is a list of approved prescription medications your insurance plan will cover."
+          },
+          {
+            "answer": "You can view your plan's formulary list on the health insurance website or app."
+          }
+        ],
+        "concept.prior_authorization": [
+          {
+            "answer": "You typically need prior authorization for high-cost drugs, specialty medications, or certain medical procedures."
+          },
+          {
+            "answer": "It can take anywhere from 24 hours to several days depending on your insurer."
+          }
+        ],
+        "concept.specialty_drug": [
+          {
+            "answer": "These drugs usually require special handling, administration, or ongoing monitoring."
+          },
+          {
+            "answer": "They may be covered but often require prior authorization and may fall under higher cost tiers."
+          }
+        ],
+        "concept.step_therapy": [
+          {
+            "answer": "It’s a policy that starts treatment with the most cost-effective drug and steps up only if necessary."
+          },
+          {
+            "answer": "In some cases, your doctor can file an exception request if there’s a medical reason."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

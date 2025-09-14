@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "intent": "navigate_to_page",
+      "patterns": [
+        "Go to {page}",
+        "Navigate to the {page} page",
+        "Open {page}"
+      ],
+      "entities": ["page"],
+      "route_to": "NavigationService"
+    },
+    {
+      "intent": "check_formulary_coverage",
+      "patterns": [
+        "Is {drug} covered?",
+        "Is {drug} in the formulary?",
+        "What tier is {drug}?"
+      ],
+      "entities": ["drug_name"],
+      "route_to": "FormularyService"
+    }
+  ]
+}

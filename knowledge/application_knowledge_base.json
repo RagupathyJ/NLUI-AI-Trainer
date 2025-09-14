@@ -1,0 +1,120 @@
+{
+  "concepts": {
+    "Formulary": {
+      "description": "A formulary is a list of prescription drugs that are covered by a health insurance plan. Drugs not on the formulary may not be covered or may require higher out-of-pocket costs.",
+      "synonyms": ["drug list", "medication coverage", "covered medicines"],
+      "related_terms": ["Tier", "Generic Drug", "Specialty Drug"],
+      "faq": [
+        {
+          "question": "What is a formulary?",
+          "answer": "A formulary is a list of approved prescription medications your insurance plan will cover."
+        },
+        {
+          "question": "How do I check if my medication is on the formulary?",
+          "answer": "You can view your plan's formulary list on the health insurance website or app."
+        }
+      ],
+      "external_links": [
+        {
+          "label": "Learn about Formularies",
+          "url": "https://www.healthcare.gov/glossary/formulary/"
+        }
+      ],
+      "categories": ["Coverage", "Prescription"],
+      "priority": 5,
+      "intent_examples": [
+        "Is my medication on the drug list?",
+        "What does formulary mean?",
+        "Check formulary status"
+      ]
+    },
+
+    "Prior Authorization": {
+      "description": "Prior authorization is the process of getting approval from your health insurance plan before a prescription or medical service is covered.",
+      "synonyms": ["pre-approval", "insurance approval", "prior auth"],
+      "related_terms": ["Formulary", "Appeal", "Step Therapy"],
+      "faq": [
+        {
+          "question": "When do I need prior authorization?",
+          "answer": "You typically need prior authorization for high-cost drugs, specialty medications, or certain medical procedures."
+        },
+        {
+          "question": "How long does prior authorization take?",
+          "answer": "It can take anywhere from 24 hours to several days depending on your insurer."
+        }
+      ],
+      "external_links": [
+        {
+          "label": "What is Prior Authorization?",
+          "url": "https://www.cms.gov/prior-authorization"
+        }
+      ],
+      "categories": ["Approval", "Pharmacy Workflow"],
+      "priority": 4,
+      "intent_examples": [
+        "Do I need prior authorization for this drug?",
+        "How does prior auth work?",
+        "Get insurance approval"
+      ]
+    },
+
+    "Specialty Drug": {
+      "description": "Specialty drugs are high-cost prescription medications used to treat complex, chronic conditions such as cancer, rheumatoid arthritis, or multiple sclerosis.",
+      "synonyms": ["high-cost drugs", "complex treatment meds"],
+      "related_terms": ["Formulary", "Prior Authorization", "Specialty Pharmacy"],
+      "faq": [
+        {
+          "question": "What makes a drug a specialty drug?",
+          "answer": "These drugs usually require special handling, administration, or ongoing monitoring."
+        },
+        {
+          "question": "Are specialty drugs covered under insurance?",
+          "answer": "They may be covered but often require prior authorization and may fall under higher cost tiers."
+        }
+      ],
+      "external_links": [
+        {
+          "label": "Understanding Specialty Drugs",
+          "url": "https://www.fda.gov/drugs/specialty-drugs"
+        }
+      ],
+      "categories": ["Drug Types"],
+      "priority": 4,
+      "intent_examples": [
+        "What is a specialty drug?",
+        "Does my plan cover high-cost medications?",
+        "Do I need prior auth for a specialty drug?"
+      ]
+    },
+
+    "Step Therapy": {
+      "description": "Step therapy is a coverage rule that requires patients to try less expensive drugs before 'stepping up' to ones that cost more.",
+      "synonyms": ["fail-first therapy", "drug trial sequence"],
+      "related_terms": ["Prior Authorization", "Formulary", "Generic Drug"],
+      "faq": [
+        {
+          "question": "What is step therapy?",
+          "answer": "It’s a policy that starts treatment with the most cost-effective drug and steps up only if necessary."
+        },
+        {
+          "question": "Can I skip step therapy?",
+          "answer": "In some cases, your doctor can file an exception request if there’s a medical reason."
+        }
+      ],
+      "external_links": [
+        {
+          "label": "Step Therapy Explained",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6510983/"
+        }
+      ],
+      "categories": ["Coverage Rules"],
+      "priority": 3,
+      "intent_examples": [
+        "What is step therapy in pharmacy?",
+        "Why do I need to try another drug first?",
+        "Can I bypass step therapy?"
+      ]
+    }
+  }
+}
+

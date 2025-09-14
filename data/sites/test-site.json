@@ -1,0 +1,60 @@
+{
+  "routingIntents": [
+    {
+      "intent": "navigate_to_page",
+      "utterances": [
+        "go to home",
+        "navigate to contact page",
+        "open about section",
+        "show me the home page",
+        "take me to contact",
+        "go to the main page",
+        "navigate to start",
+        "take me to the home page",
+        "show the about us page",
+        "go to info",
+        "can you take me to contact",
+        "where is the home page",
+        "go to home",
+        "navigate to contact page",
+        "open about section",
+        "show me the home page",
+        "take me to contact",
+        "go to %page%",
+        "navigate to %page%",
+        "open %page% section",
+        "take me to %page%",
+        "show me the %page% page"
+      ]
+    }
+  ],
+  "siteMetadata": {
+    "pages": [
+      {
+        "name": "home",
+        "url": "home.html",
+        "synonyms": [
+          "start",
+          "main"
+        ]
+      },
+      {
+        "name": "about",
+        "url": "about.html",
+        "synonyms": [
+          "info",
+          "who we are"
+        ]
+      },
+      {
+        "name": "contact",
+        "url": "contact.html",
+        "synonyms": [
+          "reach us",
+          "email",
+          "support"
+        ]
+      }
+    ]
+  }
+}

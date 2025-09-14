@@ -1,0 +1,480 @@
+{
+  "routingIntents": [
+    {
+      "intent": "navigate_to_page",
+      "utterances": [
+        "go to %page%",
+        "navigate to %page%",
+        "open %page% page",
+        "show me the %page% page",
+        "take me to %page%"
+      ]
+    }
+  ],
+  "siteMetadata": {
+    "pages": [
+      {
+        "name": "members.list",
+        "url": "/members",
+        "synonyms": [
+          "members",
+          "list members",
+          "show all members"
+        ],
+        "params": []
+      },
+      {
+        "name": "members.details",
+        "url": "/members/:memberId",
+        "synonyms": [
+          "member details",
+          "view member",
+          "member profile"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.authorizations",
+        "url": "/members/:memberId/authorizations",
+        "synonyms": [
+          "member authorizations",
+          "view authorizations"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.claims",
+        "url": "/members/:memberId/claims",
+        "synonyms": [
+          "member claims",
+          "claims for member"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.coverage",
+        "url": "/members/:memberId/coverage",
+        "synonyms": [
+          "member coverage",
+          "coverage info"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.coverage.policies",
+        "url": "/members/:memberId/coverage/policies/:policyId",
+        "synonyms": [
+          "coverage policy",
+          "policy details"
+        ],
+        "params": [
+          "memberId",
+          "policyId"
+        ]
+      },
+      {
+        "name": "members.coverage.endorsements",
+        "url": "/members/:memberId/coverage/policies/:policyId/endorsements/:endorsementId",
+        "synonyms": [
+          "endorsement details",
+          "policy endorsement"
+        ],
+        "params": [
+          "memberId",
+          "policyId",
+          "endorsementId"
+        ]
+      },
+      {
+        "name": "members.documents",
+        "url": "/members/:memberId/documents",
+        "synonyms": [
+          "member documents",
+          "documents for member"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.history",
+        "url": "/members/:memberId/history",
+        "synonyms": [
+          "member history",
+          "history of member"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.profile",
+        "url": "/members/:memberId/profile",
+        "synonyms": [
+          "member profile",
+          "profile info"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "members.notes",
+        "url": "/members/:memberId/notes",
+        "synonyms": [
+          "member notes",
+          "notes for member"
+        ],
+        "params": [
+          "memberId"
+        ]
+      },
+      {
+        "name": "claims.list",
+        "url": "/claims",
+        "synonyms": [
+          "claims",
+          "view claims",
+          "all claims",
+          "claims list"
+        ],
+        "params": []
+      },
+      {
+        "name": "claims.details",
+        "url": "/claims/:claimId",
+        "synonyms": [
+          "claim details",
+          "view claim",
+          "claim overview"
+        ],
+        "params": [
+          "claimId"
+        ]
+      },
+      {
+        "name": "claims.adjudication",
+        "url": "/claims/:claimId/adjudication",
+        "synonyms": [
+          "adjudication",
+          "claim adjudication"
+        ],
+        "params": [
+          "claimId"
+        ]
+      },
+      {
+        "name": "claims.attachments",
+        "url": "/claims/:claimId/attachments/:attachmentId",
+        "synonyms": [
+          "claim attachments",
+          "attachment details"
+        ],
+        "params": [
+          "claimId",
+          "attachmentId"
+        ]
+      },
+      {
+        "name": "claims.audit",
+        "url": "/claims/:claimId/attachments/:attachmentId/audit/:auditId",
+        "synonyms": [
+          "attachment audit",
+          "audit details"
+        ],
+        "params": [
+          "claimId",
+          "attachmentId",
+          "auditId"
+        ]
+      },
+      {
+        "name": "claims.history",
+        "url": "/claims/:claimId/history",
+        "synonyms": [
+          "claim history",
+          "history of claim"
+        ],
+        "params": [
+          "claimId"
+        ]
+      },
+      {
+        "name": "claims.notes",
+        "url": "/claims/:claimId/notes",
+        "synonyms": [
+          "claim notes",
+          "notes for claim"
+        ],
+        "params": [
+          "claimId"
+        ]
+      },
+      {
+        "name": "claims.overview",
+        "url": "/claims/:claimId/overview",
+        "synonyms": [
+          "claim overview",
+          "overview of claim"
+        ],
+        "params": [
+          "claimId"
+        ]
+      },
+      {
+        "name": "pharmacies.list",
+        "url": "/pharmacies",
+        "synonyms": [
+          "pharmacies",
+          "view pharmacies",
+          "pharmacy list"
+        ],
+        "params": []
+      },
+      {
+        "name": "pharmacies.details",
+        "url": "/pharmacies/:pharmacyId",
+        "synonyms": [
+          "pharmacy details",
+          "view pharmacy",
+          "pharmacy profile"
+        ],
+        "params": [
+          "pharmacyId"
+        ]
+      },
+      {
+        "name": "pharmacies.claims",
+        "url": "/pharmacies/:pharmacyId/claims",
+        "synonyms": [
+          "pharmacy claims",
+          "claims from pharmacy"
+        ],
+        "params": [
+          "pharmacyId"
+        ]
+      },
+      {
+        "name": "pharmacies.inventory",
+        "url": "/pharmacies/:pharmacyId/inventory",
+        "synonyms": [
+          "pharmacy inventory",
+          "inventory details"
+        ],
+        "params": [
+          "pharmacyId"
+        ]
+      },
+      {
+        "name": "pharmacies.orders",
+        "url": "/pharmacies/:pharmacyId/orders/:orderId",
+        "synonyms": [
+          "pharmacy orders",
+          "order details",
+          "view pharmacy order"
+        ],
+        "params": [
+          "pharmacyId",
+          "orderId"
+        ]
+      },
+      {
+        "name": "pharmacies.order.items",
+        "url": "/pharmacies/:pharmacyId/orders/:orderId/items/:itemId",
+        "synonyms": [
+          "order items",
+          "pharmacy order item"
+        ],
+        "params": [
+          "pharmacyId",
+          "orderId",
+          "itemId"
+        ]
+      },
+      {
+        "name": "pharmacies.order.audit",
+        "url": "/pharmacies/:pharmacyId/orders/:orderId/items/:itemId/audit/:auditId",
+        "synonyms": [
+          "order item audit",
+          "audit pharmacy order"
+        ],
+        "params": [
+          "pharmacyId",
+          "orderId",
+          "itemId",
+          "auditId"
+        ]
+      },
+      {
+        "name": "pharmacies.order.review",
+        "url": "/pharmacies/:pharmacyId/orders/:orderId/items/:itemId/audit/:auditId/review/:reviewId",
+        "synonyms": [
+          "order item review",
+          "review pharmacy order"
+        ],
+        "params": [
+          "pharmacyId",
+          "orderId",
+          "itemId",
+          "auditId",
+          "reviewId"
+        ]
+      },
+      {
+        "name": "pharmacies.profile",
+        "url": "/pharmacies/:pharmacyId/profile",
+        "synonyms": [
+          "pharmacy profile",
+          "profile of pharmacy"
+        ],
+        "params": [
+          "pharmacyId"
+        ]
+      },
+      {
+        "name": "pharmacies.reviews",
+        "url": "/pharmacies/:pharmacyId/reviews",
+        "synonyms": [
+          "pharmacy reviews",
+          "reviews of pharmacy"
+        ],
+        "params": [
+          "pharmacyId"
+        ]
+      },
+      {
+        "name": "authorizations.details",
+        "url": "/authorizations/:authId",
+        "synonyms": [
+          "authorization details",
+          "view authorization"
+        ],
+        "params": [
+          "authId"
+        ]
+      },
+      {
+        "name": "authorizations.appeals",
+        "url": "/authorizations/:authId/appeals/:appealId",
+        "synonyms": [
+          "appeal details",
+          "authorization appeal"
+        ],
+        "params": [
+          "authId",
+          "appealId"
+        ]
+      },
+      {
+        "name": "authorizations.review",
+        "url": "/authorizations/:authId/appeals/:appealId/review/:reviewId",
+        "synonyms": [
+          "appeal review",
+          "review of appeal"
+        ],
+        "params": [
+          "authId",
+          "appealId",
+          "reviewId"
+        ]
+      },
+      {
+        "name": "authorizations.evidence",
+        "url": "/authorizations/:authId/appeals/:appealId/review/:reviewId/evidence/:evidenceId",
+        "synonyms": [
+          "appeal evidence",
+          "evidence details"
+        ],
+        "params": [
+          "authId",
+          "appealId",
+          "reviewId",
+          "evidenceId"
+        ]
+      },
+      {
+        "name": "authorizations.history",
+        "url": "/authorizations/:authId/appeals/:appealId/review/:reviewId/evidence/:evidenceId/history/:historyId",
+        "synonyms": [
+          "evidence history",
+          "history of appeal evidence"
+        ],
+        "params": [
+          "authId",
+          "appealId",
+          "reviewId",
+          "evidenceId",
+          "historyId"
+        ]
+      },
+      {
+        "name": "authorizations.notes",
+        "url": "/authorizations/:authId/appeals/:appealId/review/:reviewId/evidence/:evidenceId/history/:historyId/notes/:noteId",
+        "synonyms": [
+          "appeal notes",
+          "note on evidence history"
+        ],
+        "params": [
+          "authId",
+          "appealId",
+          "reviewId",
+          "evidenceId",
+          "historyId",
+          "noteId"
+        ]
+      },
+      {
+        "name": "authorizations.documents",
+        "url": "/authorizations/:authId/documents",
+        "synonyms": [
+          "authorization documents",
+          "view documents"
+        ],
+        "params": [
+          "authId"
+        ]
+      },
+      {
+        "name": "authorizations.notes.root",
+        "url": "/authorizations/:authId/notes",
+        "synonyms": [
+          "authorization notes",
+          "notes of authorization"
+        ],
+        "params": [
+          "authId"
+        ]
+      },
+      {
+        "name": "authorizations.overview",
+        "url": "/authorizations/:authId/overview",
+        "synonyms": [
+          "authorization overview",
+          "overview of authorization"
+        ],
+        "params": [
+          "authId"
+        ]
+      },
+      {
+        "name": "authorizations.status",
+        "url": "/authorizations/:authId/status",
+        "synonyms": [
+          "authorization status",
+          "status of authorization"
+        ],
+        "params": [
+          "authId"
+        ]
+      }
+    ]
+  }
+}

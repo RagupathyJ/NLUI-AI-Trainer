@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {
+      "name": "claims",
+      "path": "/claims",
+      "synonyms": ["claims", "my claims", "claim page"]
+    },
+    {
+      "name": "formulary",
+      "path": "/formulary",
+      "synonyms": ["drug list", "covered drugs"]
+    }
+  ]
+}

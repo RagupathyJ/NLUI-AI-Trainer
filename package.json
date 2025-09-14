@@ -1,0 +1,24 @@
+{
+  "name": "pbm-nlui-agent",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "train": "node nlp/trainManager.js"
+  },
+  "dependencies": {
+    "@nlpjs/basic": "^5.0.0-alpha.5",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "node-nlp": "^5.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
